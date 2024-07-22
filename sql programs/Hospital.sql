@@ -1,0 +1,28 @@
+create database Hospital;
+use Hospital;
+create table hospital_info(hospital_name varchar(20),hospital_no bigint,h_doctorName varchar(20),h_doctor_id bigint,h_doctorspecialization varchar(20),h_patientName varchar(20),h_patient_Age bigint,h_patient_diesease varchar(20),h_patient_bloodGroup varchar(10),h_patient_number bigint);
+select * from hospital_info;
+insert into hospital_info values('manasa',1,'prashanth',101,'gynocologist','ganga',24,'headache','B+',235749282);
+insert into hospital_info values('leela',2,'naresh',102,'immunology','yamuna',23,'leg pain','B-',235749283);
+insert into hospital_info values('megha',3,'Gowrish',103,'nephrology','sngama',44,'stomachpaim','A+',235749284);
+insert into hospital_info values('priya',4,'nshantha',104,'medical genetics','kantha',20,'heart attach','C+',235749285);
+insert into hospital_info values('kishore',5,'stephen',105,'hematology','isha',30,'cardiac pain','AB+',235749286);
+insert into hospital_info values('mangalya',6,'john',106,'neonatology','kiran',24,'hand pain','AB+',23574928);
+insert into hospital_info values('meghana',7,'fernandise',107,'biochemistry','negha',40,'eye pain','AB-',235749289);
+insert into hospital_info values('nayana',8,'jeffery',108,'cardiologist','gowri',50,'migrane','o+',235749212);
+insert into hospital_info values('anisha',9,'chartles',109,'geneticit','radha',22,'fracture','0+',235749213);
+insert into hospital_info values('ayesha',10,'darvin',110,'internal medicine','reema',21,'back paon','B+',235749214);
+insert into hospital_info values('keerthana',11,'dsouze',111,'neurologist','siya',27,'throat pain','B+',235749215);
+insert into hospital_info values('kavya',12,'shrikantgha',112,'allergist','soha',24,'hair problem','A+',235749216);
+insert into hospital_info values('bhavya',13,'geetha',113,'dermotologist','megha',56,'nose problem','AB-',235749217);
+insert into hospital_info values('bhavana',14,'kamala',114,'family physiciam','kamala',66,'ear problem','o-',235749218);
+insert into hospital_info values('kiran',15,'kekini',115,'osteopath','vibha',70,'finger cut','B+',235749219);
+insert into hospital_info values('veer',16,'danniel',116,'podiatrist','gowri',45,'joint pain','AB+',235749220);
+insert into hospital_info values('ramesh',17,'danny',117,'psychiartist','girish',68,'head fracture','AB-',235749221);
+insert into hospital_info values('puneeth',18,'elizebath',118,'radiologist','karmad',34,'muscele contraction','B+',235749222);
+insert into hospital_info values('sinchana',19,'skourya',119,'surgeon','kevin',56,'headache','A-',235749224);
+insert into hospital_info values('amulya',20,'susan',120,'urologist','gagan',80,'headache','o+',235749226);
+
+select * from hospital_info;
+desc hospital_info;
+show tables;

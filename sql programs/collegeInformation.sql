@@ -1,24 +1,24 @@
 create database collegeInformation;
 use collegeInformation;
 
-create table college_info(c_name varchar(20),c_price bigint , c_id int not null unique, no_of_students int,constraint no_of_students_m check(no_of_students>=0),students_id int primary key);
+create table cllg_info(c_name varchar(20),c_price bigint , c_id int not null unique,student_name varchar(20), overall_of_students int,constraint overall_of_students_m check(overall_of_students>=0),students_id int primary key);
 
-alter table college_info add constraint c_name_uni unique(c_name);
+alter table cllg_info add constraint c_name_uni unique(c_name);
 
-alter table college_info drop index c_name_uni;
+alter table cllg_info drop index c_name_uni;
 
-insert into college_info values('bit',10,1,10,101);
-insert into college_info values('mit',11,2,11,102);
-insert into college_info values('pesit',12,3,12,103);
-insert into college_info values('jnnc',13,4,13,104);
-insert into college_info values('ait',14,5,14,105);
+insert into cllg_info values('GSS',10,1,'sindu',10,101);
+insert into cllg_info values('RV',11,2,'maya',11,102);
+insert into cllg_info values('PESITM',12,3,'payal',12,103);
+insert into cllg_info values('DVS INDEPENDENT',13,4,'siya',13,104);
+insert into cllg_info values('JNNCE',14,5,'chiru',14,105);
 
-select * from college_info;
+select * from cllg_info;
 
-alter table college_info add constraint no_of_students check(no_of_students>5 and no_of_students<=2000);
+alter table cllg_info add constraint overall_of_students check(overall_of_students>5 and overall_of_students<=2000);
 
-alter table college_info add constraint c_name_uni unique(c_name);
+alter table cllg_info add constraint c_name_uni unique(c_name);
 
-alter table college_info drop constraint no_of_students;
+alter table cllg_info drop constraint t0tal_of_students;
 
-alter table college_info drop primary key;
+alter table cllg_info drop primary key;
